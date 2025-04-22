@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CKD Prediction - Register</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #3c1053, #ad5389);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .register-box {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      text-align: center;
+      width: 350px;
+      color: white;
+    }
+
+    .register-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .register-box input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .register-box button {
+      width: 95%;
+      padding: 10px;
+      margin-top: 15px;
+      border: none;
+      background-color: #5e60ce;
+      color: white;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .register-box button:hover {
+      background-color: #4e4fcf;
+    }
+
+    .register-box .back-btn {
+      background-color: transparent;
+      color: white;
+      margin-top: 10px;
+      text-decoration: underline;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-box">
+    <h2>Register for CKD Prediction</h2>
+    <form action="login.html" method="post">
+      <input type="text" name="fullname" placeholder="Full Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="text" name="username" placeholder="Username" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required><br>
+      <button type="submit">Register</button>
+    </form>
+    <button class="back-btn" onclick="window.location.href='login.html'">Back to Login</button>
+  </div>
+
+</body>
+</html>

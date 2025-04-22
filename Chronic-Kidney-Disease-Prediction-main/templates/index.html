@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CKD Prediction - Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #3c1053, #ad5389);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      text-align: center;
+      width: 300px;
+      color: white;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .login-box input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .login-box button {
+      width: 95%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      background-color: #00c9a7;
+      color: white;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background-color: #00b18a;
+    }
+
+    .login-box .register-btn {
+      background-color: #5e60ce;
+    }
+
+    .login-box .register-btn:hover {
+      background-color: #4e4fcf;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>CKD Prediction Login</h2>
+    <form action="{{ url_for('home') }}" method="post">
+
+      <input type="text" name="username" placeholder="Username" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <button type="button" class="Sign In-btn" onclick="window.location.href='home.html'">Sign In</button>
+      <button type="button" class="register-btn" onclick="window.location.href='register.html'">Register</button>
+      <button class="back-btn" onclick="window.location.href='login.html'">Back to Login</button>
+    </form>
+  </div>
+
+</body>
+</html>
